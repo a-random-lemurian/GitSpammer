@@ -8,10 +8,14 @@ def cli():
 
 @cli.group()
 def brancher():
+    """Create branches.
+    """
     pass
 
 @cli.group()
 def committer():
+    """Create and mess around with commits.
+    """
     pass
 
 import gitspammer.brancher
