@@ -10,6 +10,5 @@ import click
 def mkcommit(commitcount):
     commitid = get_letters(8) # get a commit id to prevent
                              # duplicate messages later on
-    filename = 'GITSPAMMERFILE'
     for i in range(commitcount):
         system(f'git commit -m "{i+1} of {commitcount} GitSpammer spam commit. {commitid}" --allow-empty')
