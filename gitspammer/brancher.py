@@ -27,4 +27,15 @@ def branchmaker(branch_count, force):
             print('Cancelled. Better know what you\'re doing.')
             exit()
     for i in range(branch_count):
-        system(f'git branch {i}-{get_letters(3)}')
+        make_git_branch(
+                        return_list=False,
+                        branch_batch_id=get_letters(7),
+                        branch_name=i
+                       )
+
+# branchmaker is the CLI command access point,
+# the actual git branching happens here so
+# committer.py's branch commit stuffer can use
+# this module too
+def make_git_branch(return_list: bool, branch_batch_id, branch_name):
+    system(f'git branch {branch_name}-{branch_batch_id}')
