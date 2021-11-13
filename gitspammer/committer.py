@@ -8,7 +8,7 @@ import click
 @app.command('commit')
 @click.option('-c','--commitcount',help="How many commits to make.",default=10)
 def mkcommit(commitcount):
-    commitid = get_letters() # get a commit id to prevent
+    commitid = get_letters(8) # get a commit id to prevent
                              # duplicate messages later on
     filename = 'GITSPAMMERFILE'
     for i in range(commitcount):
