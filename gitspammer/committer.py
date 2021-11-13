@@ -1,5 +1,4 @@
 from os import system
-import json
 from gitspammer.utils import get_letters
 from gitspammer.entry import committer as app
 import click
