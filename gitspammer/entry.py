@@ -11,3 +11,6 @@ def brancher():
 @cli.group()
 def committer():
     pass
+
+import gitspammer.brancher
+import gitspammer.committer
