@@ -2,5 +2,5 @@ import random
 
 LETTERS = 'abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-def get_letters():
+def get_letters(length: int):
     return ''.join(random.choices(LETTERS,k=12))
