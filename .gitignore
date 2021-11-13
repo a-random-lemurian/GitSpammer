@@ -1,2 +1,3 @@
 ignoreme__*.*
 __pycache__
+*.egg-info
