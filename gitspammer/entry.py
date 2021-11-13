@@ -1,3 +1,5 @@
+# pylint: disable=unused-import, wrong-import-position, unnecessary-pass
+
 import click
 
 @click.group()
