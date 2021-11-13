@@ -12,6 +12,4 @@ def mkcommit(commitcount):
                              # duplicate messages later on
     filename = 'GITSPAMMERFILE'
     for i in range(commitcount):
-        jsondata = {'GitSpam': get_letters(8)}
-        json.dump(jsondata,open('GITSPAMMERFILE','w'))
-        system(f'git add GITSPAMMERFILE && git commit -m "{i+1} of {commitcount} GitSpammer modified GITSPAMMERFILE. {commitid}"')
+        system(f'git commit -m "{i+1} of {commitcount} GitSpammer spam commit. {commitid}" --allow-empty')
