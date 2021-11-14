@@ -14,9 +14,16 @@ pip install --editable .
 ### `commit`
 `gitspam committer commit -c [INTEGER]`
 Create fake commits. After the `-c` flag place the number of commits that you want to make.
+### `branchstuffer`
+`gitspam committer branchstuffer -b [BC] -c [BC]`
+Create several branches and then stuff them with fake commits.
+
+Contains a long flag called `--merge-branches-into`. After the flag, input the name of any branch you wish to merge the fake branches with.
+
 # Intended uses
 - Create fake commits, fake branches structured just like your actual Git repository to test out a command you think is too risky to blindly perform on your real repository.
 - Play around with Git commands.
+
 ## But please don't use me for:
 - Spamming actual repositories (that's not nice).
 
