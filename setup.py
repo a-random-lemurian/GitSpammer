@@ -11,5 +11,5 @@ setup(
             'gitspam = gitspammer.entry:cli'
         ],
     },
-    description="Experiment with Git's features. Create as many test commits as necessary."
+    description="Experiment with Git's features. Create as many test commits as necessary. And branches too."
 )
