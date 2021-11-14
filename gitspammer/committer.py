@@ -19,11 +19,11 @@ def mkcommit(commitcount):
 def branch_stuffer(branch_count, commit_count, merge_branches_into):
     branches = []
     for i in range(branch_count):
-        branch_name = i
         branch_batch_id = get_letters(7)
-        branches.append(f'{branch_name}-{branch_batch_id}')
-        system(f'git branch {branch_name}-{branch_batch_id}')
-        system(f'git switch {branch_name}-{branch_batch_id}')
+        branch_name = f'{i}-{branch_batch_id}'
+        branches.append(f'{branch_name}')
+        system(f'git branch {branch_name}')
+        system(f'git switch {branch_name}')
         for i in range(commit_count):
             system(f'git commit -m "{i+1} of {commit_count} GitSpammer spam commit. {branch_batch_id}" --allow-empty')
         if merge_branches_into is not None:
