@@ -9,6 +9,11 @@ cd GitSpammer
 pip install --editable .
 ```
 
+# Commands
+## `gitspam committer`
+### `commit`
+`gitspam committer commit -c [INTEGER]`
+Create fake commits. After the `-c` flag place the number of commits that you want to make.
 # Intended uses
 - Create fake commits, fake branches structured just like your actual Git repository to test out a command you think is too risky to blindly perform on your real repository.
 - Play around with Git commands.
